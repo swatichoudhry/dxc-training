@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Table Using JS</title>
+</head>
+<body>
+        <table style="width:100%"
+            border="5px solid black" align="center" cellpadding="10" cellspacing="5px" id="myTable"> 
+            
+        <!-- <thead>
+                <tr> <th colspan="3" align="center" >Products </th></tr>
+                
+            <th> Item Number</th>
+            <th> Item Name </th>
+            <th> Item Price</th>
+        
+        </thead> -->
+        
+        
+        <script>
+            
+            var x=parseInt(prompt("Enter the number of rows"));
+            
+            function myCreateFunction() {
+            var table = document.getElementById("myTable");
+            // var cell1=[];
+            // var cell2=[];
+            // var cell3=[];
+            // var row=[];
+            // for(j=0;j<x;j++){
+            // row[j]=table.insertRow(j);
+            // cell1[j]= row.insertCell(j);
+            // cell2[j]= row.insertCell(j+1);
+            // cell3[j]= row.insertCell(j+2);
+            // }
+            var cell1=[];
+            var cell2=[];
+            var cell3=[];
+          
+            for(j=0;j<x;j++)
+            {
+             var row= table.insertRow(j);     
+             
+             cell1[j]= row.insertCell(0);
+            cell2[j]= row.insertCell(1);
+            cell3[j]= row.insertCell(2);   
+             
+            }
+
+            // var cell1=[];
+            // var cell2=[];
+            // var cell3=[];
+
+            // for(k=0;k<x;k++){
+            // cell1[k]= row.insertCell(k);
+            // cell2[k]= row.insertCell(k+1);
+            // cell3[k]= row.insertCell(k+2);
+            // }
+            function tdata1(){
+             
+                 a=prompt("Enter the Item number");
+                 
+                return a;
+                
+            
+            }
+            function tdata2(){
+               
+             b=prompt("Enter the Item Name");
+            
+            return b;
+            
+        
+        }
+        function tdata3(){
+             
+             c=prompt("Enter the Item Price");
+            return c;
+        
+        }
+            for(q=0;q<x;q++){
+            var d=tdata1();
+            var e=tdata2();
+            var f=tdata3();   
+            cell1[q].innerHTML = d;
+            cell2[q].innerHTML = e;
+            cell3[q].innerHTML = f;
+            }
+            }
+            myCreateFunction();
+        </script>
+
+
+    </table>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
