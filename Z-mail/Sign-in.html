@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Z-mail Sign-In
+        </title>
+        <link href="zmail.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+           <form>
+            
+        
+                <img src="C:\Users\yrudra\Pictures\Photos\download.png" width="80px" height="70px" style="margin-left: 30px; margin-top: 20px;">
+                <h2>Sign-In to your Z-Mail Account</h2>
+        <input type="text" size="50"  id="uname" placeholder="Username" >
+       <br>
+            <input type="password" id="password" size="50" placeholder="Password" >
+        <div id="buttons"><button type="submit" id="Sign-in"  onclick="validate()">Sign-In</button>
+        </div>
+        
+        <!-- <form>
+                <input type="text" name="username" Placeholder="enter username"><br>
+                <input type="password" name="password" Placeholder="enter password"><br>
+                <button onclick="validate()">Submit</button>
+              </form> -->
+
+</form>
+<script>
+
+
+
+function validate() 
+{
+    var user = document.getElementById("uname").value;
+    var pass = document.getElementById("password").value;
+
+  if (user == "swati" && pass == "rudra") 
+  {
+    // alert('correct username');
+    success();
+  }
+  else
+   {
+    // alert('incorrect username or password');  
+    failure();
+}
+}
+function success(){
+
+  
+}
+</script> 
+
+   
+
+  </body>
+</html>
