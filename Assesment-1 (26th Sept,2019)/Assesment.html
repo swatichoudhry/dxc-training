@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+                
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js "></script>
+<title>Assesment</title>
+</head>
+<body>
+
+        <form style="margin-left: 350px; margin-top: 20px; width: 600px; height: 950px; border:solid turquoise; background-color: aliceblue; padding: 10px;" name="FC">
+                <div style="color grey" >
+                    <h2>
+Registration Form
+                    </h2>
+                    <hr style="border: 1px solid grey" >
+                    
+
+                </div>
+
+                <div class="form-group">
+                    <label >Username</label>
+                    <input class="form-control" type="text" id="uname" size="20" placeholder="Username" required>
+                    
+                </div>
+                <div class="form-group" style="display: inline-flex">
+                        <label for="inputPW">Password</label>
+                        
+                    <input class="form-control" type="password" id="inputPW" placeholder="Password" onclick="unamevalidate()" required>
+                        
+                        <label for="inputPW">Confirm Password</label>
+                        <input class="form-control" type="password" id="Confirm-PW" placeholder="Confirm Password" required>
+                        
+                    </div>
+                    <div class="form-group">
+                            <label >Name</label>
+                            <input class="form-control" type="text" id="name" size="20" placeholder="Name" required onclick="passwordvalidate()">
+                            
+                        </div>
+
+                        <div class="md-form">
+                                <label >DoB</label>
+                                <input placeholder="Selected date" type="date" id="dob" >
+                                
+                              </div>
+                        
+                        <div class="form-group">
+                                <br><label for="inputuname">Address</label>
+                                <input class="form-control" type="text" id="address" size="20" placeholder="Address(optional)" ><br>
+                                
+                                <div class="form-group">
+                                        <label >Country</label>
+                                        <select class="form-control" type="button" id="dropdownMenuButton" >
+
+                                                
+                                                <option>
+                                                    India
+                                                </option>
+                                                <option>
+                                                        US
+                                                    </option>
+                                                    <option>
+                                                            Canada
+                                                        </option>
+                                        </select>
+                                        
+                                        
+
+                                      </div>
+                                    <br> <label >ZIP Code</label>
+                                    <input class="form-control" type="number" id="zipcode"  placeholder="ZIP COde" onclick="name1()">
+                                    
+                                </div>
+                            <div class="form-group">
+                                    <label for="inputuname">EMail</label>
+                                    <input class="form-control" type="text" id="email"  placeholder="Email">
+                                    </div>
+                                    <div>
+                                            <label>
+                                                    Gender:
+                                                </label>
+                                    <label class="radio-inline"><input type="radio" name="optradio" checked>Female</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Other</label>
+                                    </div>
+                                    
+
+                                <!-- </div>
+                                    <div style="display: inline-flex" >
+
+                                   <label>
+                                       Languages:
+                                   </label>
+
+                                   <label class="checkbox-inline"><input type="checkbox" value="" >English</label>
+                                   <label class="checkbox-inline"><input type="checkbox" value="">Hindi</label>
+                                   <label class="checkbox-inline"><input type="checkbox" value="">Telugu</label>
+                                </div> -->
+                                <div style="display: inline-flex">
+                                    <label>
+                                        Languages:
+                                    </label>
+                                        
+                                                <input type = "checkbox" name = "c1" value = "c1"/> Hindi 
+                                                <br>
+                                                <input type = "checkbox" name = "c2" value = "c2"/> English
+                                                <br>
+                                                <input type = "checkbox" name = "c3" value = "c3"/> Telugu
+                                                <br> 
+                                                <input type = "checkbox" name = "c4" value = "c4"/> Kannada
+                                                <br>
+                                                
+                                                
+                                                
+
+                                </div>
+                                   
+
+                                    <div class="form-group">
+                                            <label for="comment">About:</label>
+                                            <textarea class="form-control" rows="5" id="comment" placeholder="Tell us about yourself!"></textarea>
+                                          </div>
+
+
+                                    
+                               <button type="submit" style="width: 200px" onclick="valthisform();passwordvalidate();dobvalidate();val_email();">Submit</button>
+
+                               <script src="Assesment.js">
+                               </script>
+                               
+
+                    
+                    
+    
+            </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
