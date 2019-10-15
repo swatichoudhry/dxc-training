@@ -1,0 +1,39 @@
+<!-- <p>add works!</p> -->
+
+<form #addForm="ngForm" (ngSubmit)="addDept()" style="border: 1px solid grey; width: fit-content;margin-left: 100px; padding: 20px ">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Add Dept</h3>
+      </div><br>
+      <div class="panel-body">
+        <div class="form-group">
+          <label for="id">Id</label>
+          <input id="id" type="text" class="form-control"
+                 name="id" [(ngModel)]="dept.id" >
+                
+        </div><br>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" class="form-control"
+                 name="name" [(ngModel)]="dept.name" >
+                       </div><br>
+            
+        <div class="form-group">
+          <label for="groupName">Group Name</label>
+          <input id="groupName" type="text" class="form-control"
+                 name="groupName" [(ngModel)]="dept.groupName"  >
+                 
+        </div><br>
+        <!-- <div class="form-group">
+          <label for="modified_date">Modified Date</label>
+          <input id="modified_date" type="date" class="form-control"
+                 name="modified_date" [(ngModel)]="dept.modified_date" >
+             
+        </div><br> -->
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-primary" type="submit">Add</button>
+      </div><br>
+    </div>
+  </form>
+

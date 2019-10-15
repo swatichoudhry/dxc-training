@@ -1,0 +1,66 @@
+<!-- <p>list works!</p> -->
+
+<div style="display: inline-flex">
+    <table class="table table-primary  table-hover" style="border: 1px solid grey;padding:50px;"cellspacing='20px'>
+        <thead >
+            <th> Id</th>
+            <th>Name</th>
+            <th>Group Name</th>
+            <th> Modified Date</th>
+           
+        </thead>
+        <tbody>
+        <tr *ngFor="let dept of deptlist; let i=index">
+        <td> {{dept.id}}</td>
+        <td> {{dept.name}}</td>
+        <td> {{dept.groupName}}</td>
+        <td> {{dept.modified_date| date:'dd-MM-yyyy'}}</td>
+        <td><button id="edit" (click)="edit(i)">Edit</button></td>
+        <td><button id="delete" (click)="deleteDept(i)">Delete</button></td>
+        </tr>
+    </tbody>
+    </table><br>
+
+
+<div id="updatediv" *ngIf="updatediv">
+
+    <form #editForm="ngForm" (ngSubmit)="done()" style="border: 1px solid grey; width: fit-content;margin-left: 100px; padding: 20px ">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Edit Dept</h3>
+          </div><br>
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="id">Id</label>
+              <input id="id" type="text" class="form-control"
+                     name="id" [(ngModel)]="department.id" >
+                    
+            </div><br>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" class="form-control"
+                     name="name" [(ngModel)]="department.name" >
+                           </div><br>
+                
+            <div class="form-group">
+              <label for="groupName">Group Name</label>
+              <input id="groupName" type="text" class="form-control"
+                     name="groupName" [(ngModel)]="department.groupName"  >
+                     
+            </div><br>
+            <!-- <div class="form-group">
+              <label for="modified_date">Modified Date</label>
+              <input id="modified_date" type="date" class="form-control"
+                     name="modified_date" [(ngModel)]="department.modified_date" >
+                 
+            </div><br> -->
+
+          </div>
+          <div class="panel-footer">
+            <button class="btn btn-primary" type="submit">Update</button>
+          </div><br>
+        </div>
+      </form>
+    </div >
+
+</div>
