@@ -1,0 +1,61 @@
+--QUERY
+ --1)
+
+select acc_no,customer_master.customer_no,firstname,lastname,account_master.acc_opening_date from customer_master
+inner join account_master on customer_master.customer_no=account_master.customer_no order by acc_no
+
+--2)
+
+select count(customer_city) as Cust_Count from customer_master where customer_city='DELHI'
+
+--3)
+
+select customer_master.customer_no,firstname,account_master.acc_no 
+from customer_master 
+inner join account_master
+on  customer_master.customer_no=account_master.customer_no
+where DAY(account_master.acc_opening_date)>'15' 
+order by acc_no asc
+
+
+--4)
+
+select customer_master.customer_no, customer_master.firstname, account_master.acc_no 
+from customer_master inner join account_master
+on customer_master.customer_no=account_master.customer_no
+where acc_status='TERMINATED'
+order by customer_master.customer_no, account_master.acc_no
+
+--5
+
+select transaction_type,count(transaction_no) as Trans_Count
+from account_master a inner join transaction_details t
+on a.acc_no=t.acc_no
+where customer_no like '%1'
+group by transaction_type
+order by transaction_type
+
+--6
+select count(customer_no) as Count_Customer
+from customer_master
+where customer_no not in (select customer_no from account_master)
+
+--7
+select t.acc_no,a.opening_bal+sum(transaction_amount) as deposit_amount
+from account_master a inner join transaction_details t
+on a.acc_no=t.acc_no
+where transaction_type='DEPOSIT'
+group by t.acc_no,a.opening_bal
+order by t.acc_no
+
+
+
+
+
+
+
+
+
+ 
+
+
