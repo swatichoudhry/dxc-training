@@ -1,0 +1,6 @@
+C:\Users\yrudra\source\repos\Assesment1\Assesment1\bin\Debug\Assesment1.exe.config
+C:\Users\yrudra\source\repos\Assesment1\Assesment1\bin\Debug\Assesment1.exe
+C:\Users\yrudra\source\repos\Assesment1\Assesment1\bin\Debug\Assesment1.pdb
+C:\Users\yrudra\source\repos\Assesment1\Assesment1\obj\Debug\Assesment1.csprojAssemblyReference.cache
+C:\Users\yrudra\source\repos\Assesment1\Assesment1\obj\Debug\Assesment1.exe
+C:\Users\yrudra\source\repos\Assesment1\Assesment1\obj\Debug\Assesment1.pdb
