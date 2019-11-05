@@ -1,0 +1,6 @@
+C:\Users\yrudra\source\repos\ADO_Assesment\Customer_BIlling\bin\Debug\Customer_BIlling.exe.config
+C:\Users\yrudra\source\repos\ADO_Assesment\Customer_BIlling\bin\Debug\Customer_BIlling.exe
+C:\Users\yrudra\source\repos\ADO_Assesment\Customer_BIlling\bin\Debug\Customer_BIlling.pdb
+C:\Users\yrudra\source\repos\ADO_Assesment\Customer_BIlling\obj\Debug\Customer_BIlling.csprojAssemblyReference.cache
+C:\Users\yrudra\source\repos\ADO_Assesment\Customer_BIlling\obj\Debug\Customer_BIlling.exe
+C:\Users\yrudra\source\repos\ADO_Assesment\Customer_BIlling\obj\Debug\Customer_BIlling.pdb
